@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@800&display=swap");
+
+:root {
+  --main-blue: #1f232f;
+  --highlight-blue: #7ebbf2;
+  --family: ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Figtree", sans-serif;
+}
+
+#navbar {
+  background-color: var(--main-blue);
+  min-height: 85px;
+  width: 100%;
+  animation: float 0.3s ease;
+  animation-fill-mode: forwards;
+}
+
+.nav {
+  list-style: none;
+}
+
+.logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 5rem;
+}
+
+.navSmContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2.3rem;
+  right: 5rem;
+}
+
+.navLink {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-left: 35px;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  color: var(--highlight-blue);
+}
+
+.iconsGroup {
+  margin-left: 20px;
+}
+
+.icon {
+  margin-left: 15px;
+  font-size: 1rem;
+  color: white;
+}
+
+.icon:hover {
+  color: var(--highlight-blue);
+}
+
+@keyframes float {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+
+  to {
+    opacity: 1;
+    height: 85px;
+  }
+}
+
+@keyframes zoomout {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h1 {
+  color: var(--main-blue);
+  font-size: 42px;
+  font-weight: 800;
+  margin: 5px 0 14px;
+}
+
+.introh1line {
+  height: 2px;
+  width: 165px;
+  background-color: var(--highlight-blue);
+  margin-bottom: 20px;
+}
+
+.box {
+  padding-top: 45px;
+}
+
+p {
+  color: var(--main-blue);
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  line-height: 28px;
+  margin: 17px 0;
+}
+
+.indexFix {
+  margin-top: 175px;
+}
+
+.btn {
+  color: var(--main-blue);
+  font-size: 16px;
+  padding: 5px 22px;
+  letter-spacing: 0.6px;
+  border: 1px solid rgba(0, 0, 0, 0.65);
+  margin: 25px 0 0;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.btn:hover {
+  color: white;
+  background: var(--main-blue);
+  cursor: pointer;
+}
+
+.section2 {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.aboutSection {
+  height: 100vh;
+  background-color: white;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* about section ended */
+/* Projects Section */
+
+#projects {
+  background-color: lightgrey;
+}
+
+.projectcont {
+  height: auto;
+  max-width: 950px;
+  margin: 0 auto;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.shadow {
+  display: block;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.09) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 85px;
+  width: 100vw;
+}
+
+.pdcont {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: blue;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.pdcont:hover .pdh h2,
+.pdcont:hover .pdi img {
+  font-size: 1.5rem;
+  transform: scale(1.03);
+  transition: all 0.5s;
+}
+
+.pdh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 300px;
+  background-color: rgba(31, 35, 47, 1);
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.pdi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 300px;
+  overflow: hidden;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+
+.pdi img {
+  width: 100%;
+  height: 300px;
+}
+
+/* project section ended */
+/* footer section started */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 70px;
+    background-color: var(--main-blue);
+}
